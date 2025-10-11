@@ -7,23 +7,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="shadow-[2px_4px_8px_0px_#0000001A] index-0 fixed w-full bg-white">
-        <nav class="container mx-auto px-3 py-2 flex justify-between items-center">
-            <div class="flex items-center gap-2 md:gap-3 flex-1">
+    <header class="shadow-[2px_4px_8px_0px_#0000001A] index-10 fixed w-full bg-white">
+        <nav class="container mx-auto px-3 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-5 md:gap-2 flex-1">
               <a href="/index.html" class="flex items-center gap-2">
                 <img src="/assets/images/another/logo.png" alt="logo" class="w-full w-8 h-8 md:w-10 md:h-10">
-                <p class="font-bold uppercase text-sm md:text-base">Северяночка</p>
+                <p class="hidden lg:block font-bold uppercase text-sm lg:text-base">Северяночка</p>
               </a>
           
-              <a href="/pages/category.html" class="flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-1 md:py-2 rounded-md">
-                <img src="/assets/images/another/menu.svg" alt="menu" class="w-full w-4 h-4 md:w-5 md:h-5">
+              <a href="/pages/category.html" class="hidden md:flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-4 md:py-4 rounded-md">
+                <img src="/assets/images/another/menu.svg" alt="menu" class="w-full w-5 h-5">
                 <p class="hidden lg:block text-white text-xs lg:text-sm font-medium">Каталог</p>
               </a>
           
-              <div class="flex items-center border border-[#70C05B] rounded-md overflow-hidden ml-2 flex-1 max-w-xs md:max-w-md lg:max-w-lg">
-                <input type="text" placeholder="Найти товар" class="px-2 py-1 text-xs md:text-sm w-full outline-none">
-                <button class="px-2">
-                  <img src="/assets/images/another/search.png" alt="search" class="w-full w-4 h-4 md:w-5 md:h-5">
+              <div class="flex items-center border border-[#70C05B] rounded-md max-w-[500px] md:max-w-[400px] lg:max-w-[340px] w-full xl:max-w-[560px]">
+                <input type="text" placeholder="Найти товар" class="px-4 w-full py-4 text-xs text-md ">
+                <button class="px-3">
+                  <img src="/assets/images/another/search.png" alt="search" class="w-full">
                 </button>
               </div>
             </div>
@@ -63,22 +63,21 @@
 
     <main class="bg-[#FBF8EC]">
 
-        <section class="bg-[url('./assets/images/another/herobg.png')] bg-cover bg-center bg-no-repeat h-40 md:h-68 pt-[70px] index-0">
+        <section class="bg-[url('./assets/images/another/herobg.png')] bg-cover bg-center bg-no-repeat h-40 md:h-72 pt-[85px]">
             <div class="container mx-auto px-5 flex justify-between items-center">
                 <img src="/assets/images/another/hero.png" alt="hero" class="hidden  md:block w-[363px] h-[202px]">
-                <p class="text-[#414141] text-center whitespace-nowrap text-[40px] md:text-[27px] lg:text-[45px] font-[700]">Доставка бесплатно от 1000 ₽</p>
+                <p class="text-[#414141] text-center whitespace-nowrap pt-[30px] text-[23px] sm:pt-[20px] sm:text-[30px] md:text-[30px] lg:text-[45px] font-[700]">Доставка бесплатно от 1000 ₽</p>
             </div>
         </section>
 
         <section>
-            <div class="container mx-auto px-5 py-[50px]">
+            <div class="container mx-auto px-5 pt-10 pb-10">
                 <div class="flex justify-between items-center">
-                    <h1 class="text-[#414141] font-[700] text-[36px]">Акции</h1>
-                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[16px]">Все продукты ></a>
+                    <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Акции</h1>
+                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
-                <div  class="py-10">
-                    <div class="aksiyaProducts grid grid-cols-4 gap-4">
-                        <img src="" alt="">
+                <div  class="pt-5">
+                    <div class="aksiyaProducts flex flex-col items-center sm:grid grid-cols-2 lg:grid-cols-4 gap-4"> 
                         <div>
                             <div>
                                 <h1></h1>
@@ -91,78 +90,143 @@
                         </div>
                         <p></p>
                         <p></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container mx-auto px-5 py-[50px]">
-                <div class="flex justify-between items-center">
-                    <h1 class="text-[#414141] font-[700] text-[36px]">Новинки</h1>
-                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[16px]">Все продукты ></a>
-                </div>
-                <div class="py-10">
-                    <div class="Products grid grid-cols-4 gap-4">
-                        <img src="" alt="">
                         <div>
-                            <div>
-                                <h1></h1>
-                                <p></p>
-                            </div>
-                            <div>
-                                <h1></h1>
-                                <p></p>
-                            </div>
+                            <img src="" alt="">
+                            <img src="" alt="">
                         </div>
-                        <p></p>
-                        <p></p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="container mx-auto px-5 py-[50px]">
+            <div class="container mx-auto px-5 pt-10 pb-10">
                 <div class="flex justify-between items-center">
-                    <h1 class="text-[#414141] font-[700] text-[36px]">Покупали раньше</h1>
-                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[16px]">Все продукты ></a>
+                    <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Новинки</h1>
+                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
-                <div class="py-10">
-                    <div class="Bought grid grid-cols-4 gap-4">
-                        <img src="" alt="">
+                <div class="allProducts flex flex-col items-center sm:grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
                         <div>
-                            <div>
-                                <h1></h1>
-                                <p></p>
-                            </div>
-                            <div>
-                                <h1></h1>
-                                <p></p>
-                            </div>
+                            <h1></h1>
+                            <p></p>
                         </div>
-                        <p></p>
-                        <p></p>
+                        <div>
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="container mx-auto px-5 py-[50px] flex justify-between gap-[20px]">
-                <div class="flex p-8 gap-6 bg-[#FCD5BA] rounded-[4px] shadow-[0px_8px_16px_0px_#CA936080] w-[352px] lg:w-[584px] max-h-[200px] overflow-hidden">
-                    <div class="flex flex-col gap-2">
-                        <h5 class="w-[174px] text-[18px] lg:w-[258px] text-[24px] font-[700] text-[#414141]">Оформите карту «Северяночка»</h5>
-                        <p class="w-[174px] text-[12px] lg:w-[258px] text-[16px] font-[400] text-[#414141]">И получайте бонусы при покупке в магазинах и на сайте</p>
-                    </div>
-                    <img class="shadow-[0px_8px_47px_0px_#C85A3582] md:w-[165.79px] h-[110.78px] lg:w-[206.76px] rotate-14 rounded-[10px]" src="./assets/images/another/karta.jpg" alt="karta severyanochka">
+            <div class="container mx-auto px-5 pt-10 pb-10">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Покупали раньше</h1>
+                    <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
-                <div class="flex px-5 pt-5 gap-6 bg-[#E5FFDE] rounded-[4px] w-[353px] lg:w-[584px] max-h-[200px]">
-                    <div class="flex flex-col gap-2">
-                        <h5 class="w-[174px] text-[18px] lg:w-[258px] text-[24px] font-[700] text-[#414141]">Покупайте акционные товары</h5>
-                        <p class="w-[174px] text-[12px] lg:w-[258px] text-[16px] font-[400] text-[#414141]">И получайте вдвое больше бонусов</p>
+                <div class="Bought flex flex-col items-center sm:grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
+                        <div>
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <div>
+                            <h1></h1>
+                            <p></p>
+                        </div>
                     </div>
-                    <img class="md:w-[132px] h-[126px] lg:w-[193px] h-[175px]" src="./assets/images/another/aksiyatavar.png" alt="aksiyadagi tavarlar">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto px-5 pt-5 pb-10">
+                <h1 class="text-[#414141] text-[25px] font-[500] sm:font-[700] sm:text-[36px]">Специальные предложения</h1>
+                <div class="flex flex-col items-center md:flex-row justify-between gap-[20px] pt-5">
+                    <div class="flex justify-between p-8 gap-6 bg-[#FCD5BA] rounded-[4px] shadow-[0px_8px_16px_0px_#CA936080] w-full max-w-[500px] md:max-w-[353px] lg:max-w-[700px] max-h-[200px] overflow-hidden">
+                        <div class="flex flex-col gap-2">
+                            <h5 class="w-[174px] text-[18px] lg:w-[258px] md:text-[24px] font-[700] text-[#414141]">Оформите карту «Северяночка»</h5>
+                            <p class="w-[150px] sm:w-[174px] text-[12px] lg:w-[258px] md:text-[16px] font-[400] text-[#414141]">И получайте бонусы при покупке в магазинах и на сайте</p>
+                        </div>
+                        <img class="shadow-[0px_8px_47px_0px_#C85A3582] w-[193px] md:w-[165.79px] h-[110.78px] lg:w-[206.76px] rotate-14 rounded-[10px]" src="./assets/images/another/karta.jpg" alt="karta severyanochka">
+                    </div>
+                    <div class="flex justify-between px-5 pt-5 gap-6 bg-[#E5FFDE] rounded-[4px] w-full max-w-[500px] md:max-w-[353px] lg:max-w-[700px] max-h-[200px] overflow-hidden">
+                        <div class="flex flex-col gap-2">
+                            <h5 class="w-[184px] text-[18px] lg:w-[258px] md:text-[24px] font-[700] text-[#414141]">Покупайте акционные товары</h5>
+                            <p class="w-[184px] text-[12px] lg:w-[258px] md:text-[16px] font-[400] text-[#414141]">И получайте вдвое больше бонусов</p>
+                        </div>
+                        <img class="w-[150px] sm:w-[193px] md:w-[132px] h-[126px] lg:w-[193px] h-[175px]" src="./assets/images/another/aksiyatavar.png" alt="aksiyadagi tavarlar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto px-5 pt-5 pb-10">
+                <h1 class="text-[#414141] text-[25px] font-[500] sm:font-[700] sm:text-[36px]">Наши магазины</h1>
+                <div class="flex flex-wrap gap-3 items-center pt-5 pb-5">
+                    <a class="text-[#606060] bg-[#F3F2F1] hover:text-white text-[12px] hover:bg-[#70C05B] p-[8px] rounded-[4px] w-[97px] h-[32px] text-center" href="#">п.Щельяюр</a>
+                    <a class="text-[#606060] bg-[#F3F2F1] hover:text-white text-[12px] hover:bg-[#70C05B] p-[8px] rounded-[4px] w-[97px] h-[32px] text-center" href="#">д.Вертеп</a>
+                    <a class="text-[#606060] bg-[#F3F2F1] hover:text-white text-[12px] hover:bg-[#70C05B] p-[8px] rounded-[4px] w-[97px] h-[32px] text-center" href="#">с.Краснобор</a>
+                    <a class="text-[#606060] bg-[#F3F2F1] hover:text-white text-[12px] hover:bg-[#70C05B] p-[8px] rounded-[4px] w-[97px] h-[32px] text-center" href="#">д.Диюр</a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4913.848987866926!2d94.32266981625716!3d55.80674847824653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd85d2d00940dbf%3A0xa7586dc3015959c0!2z0LLQvtC60LfQsNC7INCj0Y_RgA!5e0!3m2!1sru!2sus!4v1760121112464!5m2!1sru!2sus" 
+                    width="100%" height="300px" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto px-5 pt-5 pb-10">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-[#414141] text-[25px] font-[500] sm:font-[700] sm:text-[36px]">Статьи</h1>
+                    <a href="./pages/about.html" class="font-[400] text-[#606060] text-[16px]">Все статьи ></a>
+                </div>
+                <div class="pt-5 pb-5 flex flex-col md:flex-row justify-between items-center gap-10">
+                    <div class="max-w-[450px] md:max-w-[224px] lg:max-w-[450px] w-full h-full bg-[#FFFFFF] hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300 rounded-[4px]">
+                        <img class="w-full h-[190px]" src="/assets/images/another/state1.png" alt="state1">
+                        <div class="p-2 flex flex-col gap-2">
+                            <p class="text-[8px] text-[#8F8F8F] font-[400]">05.03.2021</p>
+                            <h1 class="text-[16px] font-[700] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Режим использования масок и перчаток на территории магазинов</h1>
+                            <p class="text-[12px] font-[400] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <a class="p-[8px] bg-[#E5FFDE] text-[#70C05B] text-[16px] font-[400] max-w-[150px] h-[40px] w-full mt-3 rounded-[4px] hover:bg-[#70C05B] hover:text-[#FFFFFF] flex items-center justify-center" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-[450px] md:max-w-[224px] lg:max-w-[450px] w-full h-full bg-[#FFFFFF] hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300 rounded-[4px]">
+                        <img class="w-full h-[190px]" src="/assets/images/another/state2.png" alt="state1">
+                        <div class="p-2 flex flex-col gap-2">
+                            <p class="text-[8px] text-[#8F8F8F] font-[400]">05.03.2021</p>
+                            <h1 class="text-[16px] font-[700] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Режим использования масок и перчаток на территории магазинов</h1>
+                            <p class="text-[12px] font-[400] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <a class="p-[8px] bg-[#E5FFDE] text-[#70C05B] text-[16px] font-[400] max-w-[150px] h-[40px] w-full mt-3 rounded-[4px] hover:bg-[#70C05B] hover:text-[#FFFFFF] flex items-center justify-center" href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-[450px] md:max-w-[224px] lg:max-w-[450px] w-full h-full bg-[#FFFFFF] hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300 rounded-[4px]">
+                        <img class="w-full h-[190px]" src="/assets/images/another/state3.png" alt="state1">
+                        <div class="p-2 flex flex-col gap-2">
+                            <p class="text-[8px] text-[#8F8F8F] font-[400]">05.03.2021</p>
+                            <h1 class="text-[16px] font-[700] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Режим использования масок и перчаток на территории магазинов</h1>
+                            <p class="text-[12px] font-[400] text-[#414141] max-w-[365px] md:max-w-[204px] lg:max-w-[365px] w-full">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <a class="p-[8px] bg-[#E5FFDE] text-[#70C05B] text-[16px] font-[400] max-w-[150px] h-[40px] w-full mt-3 rounded-[4px] hover:bg-[#70C05B] hover:text-[#FFFFFF] flex items-center justify-center" href="#">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,7 +234,69 @@
         
     </main>
 
-    <script src="products-data/products-data.js"></script>
+    <footer class="bg-[#F9F4E2] bg-[url('./assets/images/another/footerbg.png')] bg-cover bg-center bg-no-repeat h-full">
+        <div class="container mx-auto px-5 pt-5 pb-5">
+            <div class="flex justify-center md:justify-between items-center">
+                <div class="flex gap-5 items-center flex-wrap">
+                    <a href="./index.html">
+                        <img src="/assets/images/another/logo2.png" alt="logo">
+                    </a>
+                    <div>
+                        <a class="text-[#414141] text-[12px] font-[500]" href="./pages/about.html">О компании</a>
+                        <a class="text-[#414141] text-[12px] font-[500]" href="./pages/contact.html">Контакты</a>
+                        <a class="text-[#414141] text-[12px] font-[500]" href="./pages/vacancies.html">Вакансии</a>
+                        <a class="text-[#414141] text-[12px] font-[500]" href="#">Статьи</a>
+                    </div>
+                    <a class="text-[#414141] text-[12px] font-[500]" href="./pages/authorization.html">Политика обработки персональных данных</a>
+                </div>
+                <div class="block md:flex gap-5 lg:gap-10 items-center">
+                    <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                        <a href="https://www.instagram.com/"><img src="./assets/images/another/instagram.png" alt="instagram"></a>
+                        <a href="https://vk.com/"><img src="./assets/images/another/vkontakte.png" alt="vkontakte"></a>
+                        <a href="https://www.facebook.com"><img src="./assets/images/another/facebook.png" alt="facebook"></a>
+                        <a href="https://ok.ru/"><img src="./assets/images/another/ok.png" alt="ok"></a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex mr-20 md:mr-5 gap-2 pt-5 items-center"> 
+                            <img src="./assets/images/another/phone.png" alt="phone number">
+                            <p class="text-[#414141] text-[16px] font-[500] whitespace-nowrap">8 800 777 33 33</p>
+                        </div>
+                        <div class="hidden md:flex gap-2 items-center">
+                            <p class="text-[#414141] text-[12px] font-[500]">Дизайн</p>
+                            <img class="h-[10px]" src="./assets/images/another/logo3.png" alt="logo3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="my-10">
+        <div class="container mx-auto flex items-center justify-between gap-3 sm:text-xs md:hidden">
+            <a href="/pages/favorites.html" class="flex flex-col gap-2 items-center">
+                <img src="/assets/images/another/blackmenu.png" alt="favorites" class="w-10 h-10">
+                <p class="text-[#414141] text-[15px] font-[500]">Каталог</p>
+              </a>
+            <a href="/pages/favorites.html" class="flex flex-col gap-2 items-center">
+              <img src="/assets/images/another/favorits.png" alt="favorites" class="w-10 h-10">
+              <p class="text-[#414141] text-[15px] font-[500]">Избранное</p>
+            </a>
+        
+            <a href="/pages/products.html" class="flex flex-col gap-2 items-center">
+              <img src="/assets/images/another/products.png" alt="orders" class="w-10 h-10">
+              <p class="text-[#414141] text-[15px] font-[500]">Заказы</p>
+            </a>
+        
+            <a href="/pages/basket.html" class="flex flex-col gap-2 items-center">
+              <img src="/assets/images/another/basket.png" alt="basket" class= "w-10 h-10">
+              <p class="text-[#414141] text-[15px] font-[500]">Корзина</p>
+            </a>
+        
+            <div>
+              <img src="/assets/images/another/avatar.png" alt="Avatar" class="w-15 h-15 rounded-full object-cover">             
+          </div>
+    </footer>
+
+    <script src="products-data.js"></script>
     <script src="js/products.js"></script>
     <script src="js/main.js"></script>
 </body>
