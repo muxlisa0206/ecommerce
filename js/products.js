@@ -13,7 +13,7 @@ lastFourProduct.map((el) => {
     aksiyaProduct.innerHTML += `
     <div class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
-                            <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
+                            <img class="w-full h-[200px] index-0" src="${el.images[0]}" alt="${el.name}">
                             <p class="absolute mt-[-50px] ml-[10px] px-[8px] py-[4px] bg-[#FF6633] text-white rounded-[8px]">-${el.discount}%</p>
                         </div>
                         <div class="flex justify-center gap-22 items-center">
@@ -75,7 +75,7 @@ lastFourProduct.map((el) => {
 
 lastLastProduct.map((el) => {
     allProducts.innerHTML += `
-    <div class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
+    <div class="allProduct max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
@@ -139,7 +139,7 @@ lastLastProduct.map((el) => {
 
 beforeBoughtProduct.map((el) => {
     boughtBefore.innerHTML += `
-    <div class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
+    <div class="Bought max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
