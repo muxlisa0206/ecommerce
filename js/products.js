@@ -11,7 +11,8 @@ let lastFourProduct = discountProduct.slice(discountProduct.length-4, discountPr
 
 lastFourProduct.map((el) => {
     aksiyaProduct.innerHTML += `
-    <div class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
+        <a href="../pages/product.html?id=${el.id}"  
+            class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] grid grid-col-2 md:grid-col-3 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
                             <img class="w-full h-[200px] index-0" src="${el.images[0]}" alt="${el.name}">
                             <p class="absolute mt-[-50px] ml-[10px] px-[8px] py-[4px] bg-[#FF6633] text-white rounded-[8px]">-${el.discount}%</p>
@@ -69,13 +70,15 @@ lastFourProduct.map((el) => {
                             <img class="w-[15px]" src="./assets/images/another/fullstar.svg" alt=""/>
                             </div>` : ""
                         }
-                        <a href="/pages/basket.html" class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</a>
-    </div>`
+                        <button class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</button>
+        </a>
+    `
 })
 
 lastLastProduct.map((el) => {
     allProducts.innerHTML += `
-    <div class="allProduct max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
+    <a href="../pages/product.html?id=${el.id}" 
+    class="allProduct max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] grid grid-col-2 md:grid-col-3 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
@@ -132,14 +135,15 @@ lastLastProduct.map((el) => {
                             <img class="w-[15px]" src="./assets/images/another/fullstar.svg" alt=""/>
                             </div>` : ""
                         }
-                        <a href="/pages/basket.html" class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</a>
-    </div>` 
+                        <button class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</button>
+    </a>` 
 })
 
 
 beforeBoughtProduct.map((el) => {
     boughtBefore.innerHTML += `
-    <div class="Bought max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] flex flex-col items-center sm:grid grid-col-2 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
+    <a href="../pages/product.html?id=${el.id}" 
+    class="Bought max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] grid grid-col-2 md:grid-col-3 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
@@ -196,7 +200,7 @@ beforeBoughtProduct.map((el) => {
                             <img class="w-[15px]" src="./assets/images/another/fullstar.svg" alt=""/>
                             </div>` : ""
                         }
-                        <a href="/pages/basket.html" class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</a>
-    </div>` 
+                        <button class="w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B] border-1 border-[#70C05B] p-[10px] hover:bg-[#FF6633] hover:text-white hover:border-1 hover:border-[#FF6633] text-[16px]">В корзину</button>
+    </a>` 
     
 })
