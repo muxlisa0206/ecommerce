@@ -17,7 +17,7 @@ lastFourProduct.map((el) => {
                             <img class="w-full h-[200px] index-0" src="${el.images[0]}" alt="${el.name}">
                             <p class="absolute mt-[-50px] ml-[10px] px-[8px] py-[4px] bg-[#FF6633] text-white rounded-[8px]">-${el.discount}%</p>
                         </div>
-                        <div class="flex justify-center gap-22 items-center">
+                        <div class="flex justify-between items-center">
                             <div class="flex flex-col items-center">
                                 <h1 class="text-[20px] font-bold">${el.price - el.price * el.discount/100}₽</h1>
                                 <p class="text-[12px] text-[#BFBFBF]">С картой</p>
@@ -27,7 +27,7 @@ lastFourProduct.map((el) => {
                                 <p class="text-[12px] text-[#BFBFBF]">Обычная</p>
                             </div>
                         </div>
-                        <p class="text-[18px] font-bold">${el.name}</p>
+
                         <p>${el.description}</p>
                         ${
                             el.rating === 5 ? `<div class="flex pt-2 pb-2 gap-1">
@@ -82,7 +82,7 @@ lastLastProduct.map((el) => {
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
-                        <div class="flex justify-center gap-22 items-center">
+                        <div class="flex justify-between items-center">
                             <div>
                                 <h1 class="text-[20px] font-bold">${el.price - el.price * el.discount/100}₽</h1>
                                 <p class="text-[12px] text-[#BFBFBF]">С картой</p>
@@ -92,7 +92,7 @@ lastLastProduct.map((el) => {
                                 <p class="text-[12px] text-[#BFBFBF]">Обычная</p>
                             </div>
                         </div>
-                        <p class="text-[18px] font-bold">${el.name}</p>
+                        
                         <p>${el.description}</p>
                         ${
                             el.rating === 5 ? `<div class="flex pt-2 pb-2 gap-1">
@@ -147,7 +147,7 @@ beforeBoughtProduct.map((el) => {
                         <div class="relative">
                             <img class="w-full h-[200px]" src="${el.images[0]}" alt="${el.name}">
                         </div>
-                        <div class="flex justify-center gap-30 lg:gap-22 items-center">
+                        <div class="flex justify-between items-center">
                             <div>
                                 <h1 class="text-[20px] font-bold">${el.price - el.price * el.discount/100}₽</h1>
                                 <p class="text-[12px] text-[#BFBFBF]">С картой</p>
@@ -157,7 +157,7 @@ beforeBoughtProduct.map((el) => {
                                 <p class="text-[12px] text-[#BFBFBF]">Обычная</p>
                             </div>
                         </div>
-                        <p class="text-[18px] font-bold">${el.name}</p>
+
                         <p>${el.description}</p>
                         ${
                             el.rating === 5 ? `<div class="flex pt-2 pb-2 gap-1">

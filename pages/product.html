@@ -7,7 +7,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#fdfaf0]">
-    <header class="shadow-[2px_4px_8px_0px_#0000001A] z-1 fixed w-full bg-white">
+
+    <div id="loading" class="fixed inset-0 z-50 w-full h-full bg-[#fbf8ec] flex flex-col items-center justify-center space-y-6">
+      <img src="../assets/images/another/loading.svg" alt="loading" class="w-50 h-50 animate-spin" />
+
+      <h1 class="text-[#279b37] text-2xl font-bold animate-pulse">
+        Yuklanmoqda...
+      </h1>
+    </div>
+
+      <header class="shadow-[2px_4px_8px_0px_#0000001A] z-2 fixed w-full bg-white">
         <nav class="container mx-auto px-3 py-4 flex justify-between items-center">
             <div class="flex items-center gap-5 md:gap-2 flex-1">
               <a href="/index.html" class="flex items-center gap-2">
@@ -15,10 +24,13 @@
                 <p class="hidden lg:block font-bold uppercase text-sm lg:text-base">Северяночка</p>
               </a>
           
-              <a href="/pages/category.html" class="hidden md:flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-4 md:py-4 rounded-md">
-                <img src="/assets/images/another/menu.svg" alt="menu" class="w-full w-5 h-5">
+              <div class="hidden md:flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-4 md:py-4 rounded-md">
+                <button id="toggleBtn">
+                    <img id="menu" class="" width="25" src="./assets/images/another/menu.svg" alt="menu">
+                    <img id="close" class="hidden" width="25" src="./assets/images/another/close.svg" alt="close">
+                </button>
                 <p class="hidden lg:block text-white text-xs lg:text-sm font-medium">Каталог</p>
-              </a>
+              </div>
           
               <div class="flex items-center border border-[#70C05B] rounded-md max-w-[500px] md:max-w-[400px] lg:max-w-[340px] w-full xl:max-w-[560px]">
                 <input type="text" placeholder="Найти товар" class="px-4 w-full py-4 text-xs text-md ">
@@ -46,7 +58,7 @@
           
               <div class="flex items-center gap-2">
                 <img src="/assets/images/another/avatar.png" alt="Avatar" class="w-full w-6 h-6 md:w-8 md:h-8 rounded-full object-cover">
-                     
+                    
                 <select id="Алексей"
                         class="hidden lg:block bg-transparent border-none text-gray-800 font-medium cursor-pointer">
                   <option value="Алексей">Алексей</option>
@@ -57,73 +69,46 @@
                 </div>              
             </div>
           </nav>
-          
-          
     </header>
 
+    <ul id="res-menu" class="hidden md:grid w-full pt-[100px] pb-[20px] px-[90px] grid-cols-2 lg:grid-cols-4 gap-5 duration-300 translate-y-[-100%] bg-white shadow-lg fixed z-1">
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Fruit</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Vegetable</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Bakery</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Meat</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Fast Food</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dairy</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dessert</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Breakfast</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Lunch</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dinner</a>
+        </li>
+    </ul>
+
     <main>
-        <section class="pt-[90px]">
-            <div class="NameProduct container mx-auto px-3 text-left">
-                <h1 class="text-[18px] md:text-[24px] font-[700] text-[#414141]">Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</h1>
-                <div class="flex items-center gap-[100px]">
-                    <p>rate</p>
-                    <div class="flex gap-2 items-center">
-                        <img src="../assets/images/another/share-2.png" alt="">
-                        <p class="text-[12px] font-[400] text-[#606060]">Поделиться</p>
-                    </div>
-                    <div class="flex gap-2 items-center">
-                        <img src="../assets/images/another/favorits.png" alt="">
-                        <p class="text-[12px] font-[400] text-[#606060]">В избраное</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="pt-[90px]">
-            <div class="container grid grid-cols-2 mx-auto px-">
-                <div class="SingleProduct flex items-center gap-[20px]">
-                    <div class="flex flex-col gap-[5px]">
-                        <img class="w-[100px] object-cover" src="" alt="">
-                        <img class="w-[100px] object-cover" src="" alt="">
-                        <img class="w-[100px] object-cover" src="" alt="">
-                        <img class="w-[100px] object-cover" src="" alt="">                            
-                    </div>
-                    <img class="h-full" src="" alt="">
-                </div>
-                <div class="max-w-[584px] h-[496px] flex flex-col gap-10">
-                     <div class="flex justify-between items-center">
-                        <div class="flex flex-col gap-1 items-center">
-                          <p class="text-[24px] font-[400] text-[#606060]">192,69₽</p>
-                          <p class="text-[12px] font-[400] text-[#BFBFBF]">Обычная цена</p>
-                        </div>
-                        <div class="flex flex-col gap-1 items-center">
-                          <p class="text-[36px] font-[700] text-[#414141]">108,99₽</p>
-                          <p>С картой Северяночки</p>
-                        </div>
-                     </div>
-                     <div class="flex justify-center my-4">
-                        <a href="../pages/basket.html" class="bg-[#ff5c00] text-white text-lg font-[600] px-16 py-5 rounded-[4px] flex items-center gap-2">
-                          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6h13.4M7 13L5.4 5M6 19a1 1 0 100 2 1 1 0 000-2zm12 0a1 1 0 100 2 1 1 0 000-2z"></path>
-                          </svg>
-                          В корзину
-                        </a>
-                      </div>
-                     <div class="max-w-[584px] font-sans">
-                        <div class="flex justify-between bg-[#f5f5f5] px-4 py-2 font-bold">
-                          <span>Бренд</span>
-                          <span>ПРОСТОКВАШИНО</span>
-                        </div>
-                        <div class="flex justify-between px-4 py-2">
-                          <span>Страна производителя</span>
-                          <span class="font-bold">Россия</span>
-                        </div>
-                        <div class="flex justify-between bg-[#f5f5f5] px-4 py-2">
-                          <span>Упаковка</span>
-                          <span class="font-bold">180 г</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="single-products">
+
             </div>
         </section>
 
@@ -134,22 +119,7 @@
                   <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
               </div>
               <a class="aksiyaProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  <!-- <div>
-                      <div>
-                          <h1></h1>
-                          <p></p>
-                      </div>
-                      <div>
-                          <h1></h1>
-                          <p></p>
-                      </div>
-                  </div>
-                  <p></p>
-                  <p></p>
-                  <div>
-                      <img src="" alt="">
-                      <img src="" alt="">
-                  </div> -->
+                  
               </a>
           </div>
       </section>
@@ -161,22 +131,7 @@
                 <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
             </div>
             <div class="allProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- <div>
-                    <div>
-                        <h1></h1>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h1></h1>
-                        <p></p>
-                    </div>
-                </div>
-                <p></p>
-                <p></p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div> -->
+                
             </div>
         </div>
     </section>
@@ -247,7 +202,10 @@
   </footer>
 
     <script src="../products-data.js"></script>
-    <script src="../js/products.js"></script>
+
     <script src="../js/product.js"></script>
+
+    <script src="../js/products.js"></script>
+
 </body>
 </html>

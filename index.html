@@ -7,7 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="shadow-[2px_4px_8px_0px_#0000001A] z-1 fixed w-full bg-white">
+
+    <div id="loading" class="fixed inset-0 z-50 w-full h-full bg-[#fbf8ec] flex flex-col items-center justify-center space-y-6">
+        <img src="./assets/images/another/loading.svg" alt="loading" class="w-50 h-50 animate-spin" />
+
+        <h1 class="text-[#279b37] text-2xl font-bold animate-pulse">
+          Yuklanmoqda...
+        </h1>
+      </div>
+      
+    
+    <header class="shadow-[2px_4px_8px_0px_#0000001A] z-2 fixed w-full bg-white">
         <nav class="container mx-auto px-3 py-4 flex justify-between items-center">
             <div class="flex items-center gap-5 md:gap-2 flex-1">
               <a href="/index.html" class="flex items-center gap-2">
@@ -15,10 +25,13 @@
                 <p class="hidden lg:block font-bold uppercase text-sm lg:text-base">Северяночка</p>
               </a>
           
-              <a href="/pages/category.html" class="hidden md:flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-4 md:py-4 rounded-md">
-                <img src="/assets/images/another/menu.svg" alt="menu" class="w-full w-5 h-5">
+              <div class="hidden md:flex items-center gap-1 md:gap-2 bg-[#70C05B] px-3 md:px-5 py-4 md:py-4 rounded-md">
+                <button id="toggleBtn">
+                    <img id="menu" class="" width="25" src="./assets/images/another/menu.svg" alt="menu">
+                    <img id="close" class="hidden" width="25" src="./assets/images/another/close.svg" alt="close">
+                </button>
                 <p class="hidden lg:block text-white text-xs lg:text-sm font-medium">Каталог</p>
-              </a>
+              </div>
           
               <div class="flex items-center border border-[#70C05B] rounded-md max-w-[500px] md:max-w-[400px] lg:max-w-[340px] w-full xl:max-w-[560px]">
                 <input type="text" placeholder="Найти товар" class="px-4 w-full py-4 text-xs text-md ">
@@ -57,9 +70,40 @@
                 </div>              
             </div>
           </nav>
-          
-          
     </header>
+
+    <ul id="res-menu" class="hidden md:grid w-full pt-[100px] pb-[20px] px-[90px] grid-cols-2 lg:grid-cols-4 gap-5 duration-300 translate-y-[-100%] bg-white shadow-lg fixed z-1">
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Fruit</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Vegetable</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Bakery</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Meat</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Fast Food</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dairy</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dessert</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Breakfast</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Lunch</a>
+        </li>
+        <li>
+            <a class="text-[16px] text-[Main/onSurface] hover:text-[#FF6633] font-bold" href="">Dinner</a>
+        </li>
+    </ul>
 
     <main class="bg-[#FBF8EC]">
 
@@ -77,22 +121,7 @@
                     <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
                 <a class="aksiyaProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                    
                 </a>
             </div>
         </section>
@@ -104,22 +133,7 @@
                     <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
                 <div class="allProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -130,23 +144,8 @@
                     <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Покупали раньше</h1>
                     <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
-                <div class="Bought flex flex-col items-center sm:grid grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                        <div>
-                            <h1></h1>
-                            <p></p>
-                        </div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                <div class="Bought flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
                 </div>
             </div>
         </section>
@@ -295,6 +294,9 @@
     </footer>
 
     <script src="products-data.js"></script>
+
+    <script src="./js/catalogMenu.js"></script>
+
     <script src="js/products.js"></script>
 
 </body>
