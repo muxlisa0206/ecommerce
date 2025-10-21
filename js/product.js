@@ -74,19 +74,19 @@ idProduct.map((el) => {
                         <div class="flex-col gap-5">
                         ${
                             el.images.map((el) => {
-                                return `<img class="md:w-[120px] w-[100px] object-cover" src=${el} alt="">`
+                                return `<img class="w-[80px] lg:w-[133px] object-cover" src=${el} alt="">`
                             }).join(" ")
                         }                      
                         </div>
-                        <img class="h-auto" src=${el.images[0]} alt="">
+                        <img class="w-[265px] lg:w-full" src=${el.images[0]} alt="">
                     </div>
                         <div class="grid grid-cols-1 gap-4 md:hidden">
-                            <img class="w-full h-auto" src=${el.images[0]} alt="">
+                            <img class="w-full h-full" src=${el.images[0]} alt="">
 
                             <div class="flex gap-5 justify-center flex-nowrap">
                             ${
                                 el.images.map((el) => {
-                                    return `<img class="md:w-[120px] w-[100px] object-cover" src=${el} alt="">`
+                                    return `<img class="md:w-[100px] w-[100px] object-cover" src=${el} alt="">`
                                 }).join(" ")
                             }  
                             </div>
