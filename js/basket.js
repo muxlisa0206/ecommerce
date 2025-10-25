@@ -46,12 +46,12 @@ function basketProduct(content, data){
                             <input 
                             onClick="addToCheck(this , ${el.id})"
                             type="checkbox" class="check w-[20px] h-[20px] mx-[10px]">
-                            <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4">
                                 <a href="../pages/product.html?id=${el.id}" 
                                 class="relative">
                                     <img class="max-w-[150px] w-full h-[76px] index-0 object-cover" src="${el.images[0]}" alt="${el.name}">
                                 </a>
-                                <div class=" flex flex-col">
+                            <div class=" flex flex-col">
                                 <p class="text-[16px] line-clamp-2 md:line-clamp-none">${el.description}</p>
                                 <div class="flex gap-3 items-center">
                                     <div class="flex flex-col items-center">
@@ -64,7 +64,7 @@ function basketProduct(content, data){
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                             <div class="max-w-[100px] w-full flex items-center justify-center duration-500 rounded-[4px] text-[#70C05B]">
                                         <button 
                                         onClick="decrease(${el.id})"

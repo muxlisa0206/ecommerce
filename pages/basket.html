@@ -68,17 +68,26 @@
                 <p class="relative">Корзина <span class="absolute top-[-35px] left-[35px] text-[orangered] font-bold" id="badge"></span></p>
               </a>
           
-              <div class="flex items-center gap-2">
-                <img src="/assets/images/another/avatar.png" alt="Avatar" class="w-full w-6 h-6 md:w-8 md:h-8 rounded-full object-cover">
-                     
-                <select id="Алексей"
-                        class="hidden lg:block bg-transparent border-none text-gray-800 font-medium cursor-pointer">
-                  <option value="Алексей">Алексей</option>
-                  <option value="Иван">Иван</option>
-                  <option value="Мария">Мария</option>
-                  <option value="Выход">Выход</option>
-                </select>
-                </div>              
+              <div id="profil" class="flex flex-col items-center cursor-pointer">
+                <img id="profil-img" src="/assets/images/another/avatar.png" alt="Avatar" class="w-full w-6 h-6 md:w-8 md:h-8 rounded-full object-cover">
+                <p id="profil-name" class="relative">Вход</p>
+              </div>   
+              
+              <div id="profil-modal" class="hidden fixed z-20 left-0 top-0 w-full h-full bg-[orangered]/50 flex items-center justify-center p-[30px] duration-300">
+                <div id="inner-profil-modal" class="max-w-[500px] w-full p-[30px] bg-[white] rounded-[20px] flex flex-col gap-5 duration-300">
+                    <h1 class="font-bold text-[25px] text-center">Вход</h1>
+                    <form id="form-modal" class="flex flex-col gap-2">
+                        <p class="text-[gray] text-[18px]">Телефон</p>
+                        <input required class="border-1 border-[green] py-2 px-2" type="tel" placeholder="Your Name">
+                        <input required class="border-1 border-[green] py-2 px-2" type="tel" placeholder="enter the phone number">
+                        <div class="flex items-center justify-between">
+                            <button class="cursor-pointer text-[green] text-[16px] bg-transparent">регистрация</button>
+                            <button class="cursor-pointer text-[orangered] text-[16px] bg-transparent">забыли пароль?</button>
+                        </div>
+                        <button type="submit" class="w-full bg-[orangered] border-1 border-[orangered] px-2 py-3 mt-5 rounded-[5px] text-[white] text-[20px] font-medium cursor-pointer">Вход</button>                
+                    </form>
+                </div>
+              </div>             
             </div>
           </nav>
     </header>
@@ -125,7 +134,7 @@
                 <input id="all-check" class="w-[25px] h-[25px]" type="checkbox">
                 <p id="remove" class="text-[red] cursor-pointer font-medium underline">Удалить выбранные</p>
               </div>
-              <div class="flex flex-col gap-[40px] items-center md:flex-row lg:justify-between">
+              <div class="flex flex-col gap-[40px] md:flex-row lg:justify-between">
                 <div class="cart-cards flex flex-col gap-3">
             
                 </div>
@@ -239,6 +248,7 @@
     <script src="/products-data.js"></script>
     <script src="/js/products.js"></script> 
     <script src="/js/catalogMenu.js"></script>
+    <script src="/js/profil.js"></script>
     <script src="/js/basket.js"></script>
 </body>
 </html>
