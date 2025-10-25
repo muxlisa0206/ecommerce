@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
+<body class="bg-[#FBF8EC]">
     <!-- <div id="loading" class="fixed inset-0 z-50 w-full h-full bg-[#fbf8ec] flex flex-col items-center justify-center space-y-6">
         <img src="../assets/images/another/loading.svg" alt="loading" class="w-50 h-50 animate-spin" />
 
@@ -119,27 +119,37 @@
 
     <main>
         <section>
-            <div class="container mx-auto px-3 pt-[100px] pb-[60px]">
+            <div class="container mx-auto px-3 pt-[120px] pb-[60px]">
               <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Корзина</h1>
+              <div class="flex items-end gap-3 py-5">
+                <input id="all-check" class="w-[25px] h-[25px]" type="checkbox">
+                <p id="remove" class="text-[red] cursor-pointer font-medium underline">Удалить выбранные</p>
+              </div>
               <div class="flex flex-col gap-[40px] items-center md:flex-row lg:justify-between">
                 <div class="cart-cards flex flex-col gap-3">
             
                 </div>
                 <div class="sm:max-w-[500px] md:max-w-[272px] lg:max-w-[372px] xl:max-w-[572px] flex flex-col gap-3 w-full text-gray-800">
+                  <input
+                      id="promo"
+                      type="text"
+                      placeholder="Promo kod"
+                      class="px-5 py-3 text-[18px] sm:max-w-[500px] md:max-w-[272px] lg:max-w-[372px] xl:max-w-[572px] w-full border-[orangered] border-1 rounded-[4px]"
+                    >
                   <p class="text-sm text-gray-600 mb-4">На карте накоплено 200 ₽</p>
                 
                   <div class="mb-2 flex justify-between text-base">
-                    <span>3 товара</span>
-                    <span>258,10 ₽</span>
+                    <span class="mahsulotlar-soni"></span>
+                    <span class="flex items-center gap-2"><span class="allPrice"></span>₽</span>
                   </div>
                   <div class="mb-4 flex justify-between text-base text-red-500">
                     <span>Скидка</span>
-                    <span>-8,01 ₽</span>
+                    <span><span class="discount text-[red]"></span>₽</span>
                   </div>
                 
                   <div class="border-t border-gray-200 pt-3 mb-4 flex justify-between text-xl font-bold">
                     <span>Итог</span>
-                    <span>250,09 ₽</span>
+                    <span><span class="payPrice"></span>₽</span>
                   </div>
                 
                   <div class="flex items-center mb-4 text-green-600 text-sm font-semibold">

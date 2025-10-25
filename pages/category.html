@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
+<body class="bg-[#FBF8EC]">
     <!-- <div id="loading" class="fixed inset-0 z-50 w-full h-full bg-[#fbf8ec] flex flex-col items-center justify-center space-y-6">
         <img src=../assets/images/another/loading.svg" alt="loading" class="w-50 h-50 animate-spin" />
 
@@ -119,8 +119,37 @@
 
     <main>
         <section>
-            <div id="CategoryProducts" class="container mx-auto px-3 pt-[100px] pb-[60px] flex flex-col gap-[20px]">
+            <div class="container mx-auto px-3 pt-[100px] pb-[60px] flex justify-between items-star gap-[30px]">
+              <div class="max-w-[272px] w-full p-4 flex flex-col gap-[20px]">
+                <h1 class="my-[30px] font-bold text-[48px] text-[#414141]">${name}</h1>
+                <div class="mb-4">
+                  <h2 class="font-bold rounded-[4px] p-[10px] bg-[#F3F2F1]">Фильтр</h2>
+                </div>
+              
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[16px] text-[#000000 font-medium]">Цена</span>
+                    <button class="p-[8px] rounded-[4px] text-[12px] text-[#606060] bg-[#F3F2F1]">Очистить</button>
+                  </div>
+              
+                  <div class="flex items-center space-x-2 mb-3">
+                    <input type="number" value="1"
+                      class="rounded-[4px] py-[8px] px-[16px] border-1 border-[#BFBFBF] max-w-[124px] w-full bg-[#ffffff]">
+                    <span class="font-bold">—</span>
+                    <input type="number" value="100"
+                      class="rounded-[4px] py-[8px] px-[16px] border-1 border-[#BFBFBF] max-w-[124px] w-full bg-[#ffffff]">
+                  </div>
+              
+                  <div class="relative my-10">
+                    <input type="range" min="1" max="100" value="20"
+                      class="absolute w-full h-1 bg-[green] rounded-lg cursor-pointer accent-[green]">
+                  </div>
+                </div>
+              </div>
+              
+              <div id="CategoryProducts" class="flex flex-col gap-[20px]">
 
+              </div>
             </div>
         </section>
     </main>

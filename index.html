@@ -41,7 +41,7 @@
                       placeholder="Найти товар"
                       class="px-5 py-3 text-[18px] flex-grow min-w-0 outline-none border-none rounded-l-md"
                     >
-                    <div class="search-cards w-full absolute top-13 bg-white border-[2px] border-gray-300 rounded-[10px] p-[10px] max-h-48 overflow-y-auto ">
+                    <div class="search-cards w-full absolute top-13 bg-white border-[2px] border-gray-300 rounded-[10px] p-[10px] max-h-[300px] overflow-y-auto ">
                         
                     </div>
                     <button class="px-3 rounded-r-md">
@@ -52,7 +52,7 @@
               </div>
             </div>
           
-            <div class="hidden md:flex items-center gap-3 md:gap-5 text-[10px] sm:text-xs md:text-sm ml-3">
+            <div class="hidden md:flex items-end gap-3 md:gap-5 text-[10px] sm:text-xs md:text-sm ml-3">
               <a href="/pages/favorites.html" class="flex flex-col items-center">
                 <img src="/assets/images/another/favorits.png" alt="favorites" class="w-full w-5 h-5 md:w-6 md:h-6">
                 <p>Избранное</p>
@@ -60,25 +60,34 @@
           
               <a href="/pages/products.html" class="flex flex-col items-center">
                 <img src="/assets/images/another/products.png" alt="orders" class="w-full w-5 h-5 md:w-6 md:h-6">
-                <p>Заказы</p>
+                <p>продукты</p>
               </a>
           
               <a href="/pages/basket.html" class="flex flex-col items-center relative">
                 <img src="/assets/images/another/basket.png" alt="basket" class= "w-full w-5 h-5 md:w-6 md:h-6">
-                <p class="relative">Корзина <span class="absolute top-[-35px] left-[35px] text-[orangered] font-bold" id="badge"></span></p>
+                <p class="relative">Корзина <span class="absolute top-[-35px] left-[35px] bg-[red] rounded-[50%] w-5 h-5 flex items-center justify-center text-[white] font-bold" id="badge"></span></p>
               </a>
           
-              <div class="flex items-center gap-2">
-                <img src="/assets/images/another/avatar.png" alt="Avatar" class="w-full w-6 h-6 md:w-8 md:h-8 rounded-full object-cover">
-                     
-                <select id="Алексей"
-                        class="hidden lg:block bg-transparent border-none text-gray-800 font-medium cursor-pointer">
-                  <option value="Алексей">Алексей</option>
-                  <option value="Иван">Иван</option>
-                  <option value="Мария">Мария</option>
-                  <option value="Выход">Выход</option>
-                </select>
-                </div>              
+              <div id="profil" class="flex flex-col items-center cursor-pointer">
+                <img id="profil-img" src="/assets/images/another/avatar.png" alt="Avatar" class="w-full w-6 h-6 md:w-8 md:h-8 rounded-full object-cover">
+                <p id="profil-name" class="relative">Вход</p>
+              </div>   
+              
+              <div id="profil-modal" class="hidden fixed z-20 left-0 top-0 w-full h-full bg-[orangered]/50 flex items-center justify-center p-[30px] duration-300">
+                <div id="inner-profil-modal" class="max-w-[500px] w-full p-[30px] bg-[white] rounded-[20px] flex flex-col gap-5 duration-300">
+                    <h1 class="font-bold text-[25px] text-center">Вход</h1>
+                    <form id="form-modal" class="flex flex-col gap-2">
+                        <p class="text-[gray] text-[18px]">Телефон</p>
+                        <input required class="border-1 border-[green] py-2 px-2" type="tel" placeholder="Your Name">
+                        <input required class="border-1 border-[green] py-2 px-2" type="tel" placeholder="enter the phone number">
+                        <div class="flex items-center justify-between">
+                            <button class="cursor-pointer text-[green] text-[16px] bg-transparent">регистрация</button>
+                            <button class="cursor-pointer text-[orangered] text-[16px] bg-transparent">забыли пароль?</button>
+                        </div>
+                        <button type="submit" class="w-full bg-[orangered] border-1 border-[orangered] px-2 py-3 mt-5 rounded-[5px] text-[white] text-[20px] font-medium cursor-pointer">Вход</button>                
+                    </form>
+                </div>
+              </div>
             </div>
           </nav>
     </header>
@@ -118,7 +127,7 @@
 
     <main class="bg-[#FBF8EC]">
 
-        <section class="bg-[url('./assets/images/another/herobg.png')] bg-cover bg-center bg-no-repeat h-40 md:h-72 pt-[85px]">
+        <section class="bg-[url('./assets/images/another/herobg.png')] bg-cover bg-center bg-no-repeat h-40 md:h-72 mt-[20px] pt-[85px]">
             <div class="container mx-auto px-5 flex justify-between items-center">
                 <img src="/assets/images/another/hero.png" alt="hero" class="hidden  md:block w-[463px] h-[202px]">
                 <p class="text-[#414141] text-center whitespace-nowrap pt-[30px] text-[23px] sm:pt-[20px] sm:text-[30px] md:text-[30px] lg:text-[45px] font-[700]">Доставка бесплатно от 1000 ₽</p>
@@ -131,9 +140,9 @@
                     <h1 class="text-[#414141] font-[500] md:font-[700] text-[25px] md:text-[36px]">Акции</h1>
                     <a href="/pages/products.html" class="font-[400] text-[#606060] text-[14px] md:text-[16px]">Все продукты ></a>
                 </div>
-                <a class="aksiyaProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    
-                </a>
+                <div class="aksiyaProducts flex flex-col items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                </div>
             </div>
         </section>
 
@@ -309,6 +318,6 @@
     <script src="./js/catalogMenu.js"></script>
 
     <script src="js/products.js"></script> 
-
+    <script src="/js/profil.js"></script>
 </body>
 </html>

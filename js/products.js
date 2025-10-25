@@ -24,11 +24,12 @@ function showLastFourProducts(content , data){
         content.innerHTML += `
             <div 
                 class="aksiyaProducts max-w-[365px] w-full h-full rounded-[4px] bg-[#FFFFFF] shadow-[1px_2px_4px_0px_#0000001A;] p-[10px] grid grid-col-2 md:grid-col-3 lg:grid-col-4 hover:shadow-[4px_8px_16px_0px_#FF663333] duration-300">
-                            <a href="../pages/product.html?id=${el.id}" 
-                            class="relative">
-                                <img class="w-full h-[200px] index-0" src="${el.images[0]}" alt="${el.name}">
+                            <div 
+                                class="relative">
+                                <a href="../pages/product.html?id=${el.id}"><img class="w-full h-[200px] index-0" src="${el.images[0]}" alt="${el.name}"></a>
                                 <p class="absolute mt-[-50px] ml-[10px] px-[8px] py-[4px] bg-[#FF6633] text-white rounded-[8px]">-${el.discount}%</p>
-                            </a>
+                                <img class="absolute backdrop-blur-sm bg-white/30 rounded-[10px] ml-[255px] sm:ml-[220px] md:ml-[160px] lg:ml-[165px] xl:ml-[230px] mt-[-190px] 2xl:ml-[290px] w-[40px]" src="./assets/images/another/like.svg" alt="">                            
+                            </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex flex-col items-center">
                                     <h1 class="text-[20px] font-bold">${el.price - el.price * el.discount/100}₽</h1>
@@ -114,20 +115,20 @@ function addToCard(id){
     cart.push(item);
     localStorage.setItem("cart" , JSON.stringify(cart))
     badge.textContent = cart.length;
-    showLastFourProducts(aksiyaProduct , lastFourProduct)
-    showLastFourProducts(allProducts , lastLastProduct)
-    showLastFourProducts(boughtBefore , beforeBoughtProduct)
-    basketProduct(cartCards, cart)
+    showLastFourProducts(aksiyaProduct , lastFourProduct);
+    showLastFourProducts(allProducts , lastLastProduct);
+    showLastFourProducts(boughtBefore , beforeBoughtProduct);
+    basketProduct(cartCards, cart);
 }
 
 function increase(id){
     let item = cart.find((el) => el.id === id)
     item.qty += 1;
-    localStorage.setItem("cart" , JSON.stringify(cart))
-    showLastFourProducts(aksiyaProduct , lastFourProduct)
-    showLastFourProducts(allProducts , lastLastProduct)
-    showLastFourProducts(boughtBefore , beforeBoughtProduct)
-    basketProduct(cartCards, cart)
+    localStorage.setItem("cart" , JSON.stringify(cart));
+    showLastFourProducts(aksiyaProduct , lastFourProduct);
+    showLastFourProducts(allProducts , lastLastProduct);
+    showLastFourProducts(boughtBefore , beforeBoughtProduct);
+    basketProduct(cartCards, cart);
 }
 
 function decrease(id){
@@ -138,8 +139,8 @@ function decrease(id){
         badge.textContent=cart.length;
         localStorage.setItem("cart" , JSON.stringify(cart))
     }
-    showLastFourProducts(aksiyaProduct , lastFourProduct)
-    showLastFourProducts(allProducts , lastLastProduct)
-    showLastFourProducts(boughtBefore , beforeBoughtProduct)
-    basketProduct(cartCards, cart)
+    showLastFourProducts(aksiyaProduct , lastFourProduct);
+    showLastFourProducts(allProducts , lastLastProduct);
+    showLastFourProducts(boughtBefore , beforeBoughtProduct);
+    basketProduct(cartCards, cart);
 }

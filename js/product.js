@@ -71,19 +71,19 @@ idProduct.map((el) => {
                 </div>
                 <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
                     <div class="hidden md:flex items-center gap-[20px]">
-                        <div class="flex-col gap-5">
+                        <div id="cart-images" class="flex-col gap-[5px]">
                         ${
                             el.images.map((el) => {
                                 return `<img class="w-[80px] lg:w-[133px] object-cover" src=${el} alt="">`
                             }).join(" ")
                         }                      
                         </div>
-                        <img class="w-[265px] lg:w-full" src=${el.images[0]} alt="">
+                        <img id="main-image" class="w-[265px] lg:w-full max-h-[350px] h-full" src=${el.images[0]} alt="">
                     </div>
                         <div class="grid grid-cols-1 gap-4 md:hidden">
-                            <img class="w-full h-full" src=${el.images[0]} alt="">
+                            <img id="main-image" class="w-full h-full" src=${el.images[0]} alt="">
 
-                            <div class="flex gap-5 justify-center flex-nowrap">
+                            <div id="cart-images" class="flex gap-5 justify-center flex-nowrap">
                             ${
                                 el.images.map((el) => {
                                     return `<img class="md:w-[100px] w-[100px] object-cover" src=${el} alt="">`
@@ -131,3 +131,9 @@ idProduct.map((el) => {
 })
 
 
+let cartImages = document.getElementById("cart-images");
+let mainImage = document.getElementById("main-image");
+
+cartImages.addEventListener("click" , function(e){
+  e.target.src && (mainImage.src = e.target.src)
+})
